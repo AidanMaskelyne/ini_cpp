@@ -2,4 +2,9 @@
 
 #include <catch2/catch.hpp>
 
-#include "CPPINI/INI.h"
+#include "INICPP/INI.h"
+
+TEST_CASE("Basic test", "[main]")
+{
+	REQUIRE(1 == 1);
+}
