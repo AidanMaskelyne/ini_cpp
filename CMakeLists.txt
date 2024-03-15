@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.1...3.28)
+cmake_minimum_required(VERSION 3.28)
 
 project(
 	INICpp
@@ -8,7 +8,7 @@ project(
 )
 
 option(BUILD_DOCS "Build documentation" ON)
-option(RUN_TESTS "Run the tests" ON)
+option(BUILD_TESTS "Run the tests" OFF)
 
 if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
 
@@ -41,4 +41,4 @@ if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
 
 endif()
 
-add_library(INICpp INTERFACE src/INI.h)
+add_library(INICpp INTERFACE include/CPPINI/INI.h)
